@@ -17,14 +17,16 @@ class IndexPage extends React.Component {
             projectTwoImgMain={this.props.data.projectTwoImgMain}
             projectTwoImgDetail={this.props.data.projectTwoImgDetail}
             projectThreeImgMain={this.props.data.projectThreeImgMain}
-            projectThreeImgDetail={this.props.data.projectThreeImgDetail}
+            projectThreeImgDetailOne={this.props.data.projectThreeImgDetailOne}
+            projectThreeImgDetailTwo={this.props.data.projectThreeImgDetailTwo}
           />
-          <PastLife
+          {/* //TODO: Add in past work section */}
+          {/* <PastLife
             pastOne={this.props.data.pastOne}
             pastTwo={this.props.data.pastTwo}
             pastThree={this.props.data.pastThree}
             pastFour={this.props.data.pastFour}
-          />
+          /> */}
         </div>
         <Footer />
       </Layout>
@@ -56,22 +58,29 @@ export const smFluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    projectOneImgMain: file(relativePath: { eq: "dream-recall-main.jpg" }) {
+    projectOneImgMain: file(relativePath: { eq: "dream-recall-main.png" }) {
       ...fluidImage
     }
-    projectOneImgDetail: file(relativePath: { eq: "dream-recall-detail.jpg" }) {
+    projectOneImgDetail: file(relativePath: { eq: "dream-recall-detail.png" }) {
       ...fluidImage
     }
-    projectTwoImgMain: file(relativePath: { eq: "temp-project.jpg" }) {
+    projectTwoImgMain: file(relativePath: { eq: "noteful-main.png" }) {
       ...fluidImage
     }
-    projectTwoImgDetail: file(relativePath: { eq: "temp-project.jpg" }) {
+    projectTwoImgDetail: file(relativePath: { eq: "noteful-detail.png" }) {
       ...fluidImage
     }
-    projectThreeImgMain: file(relativePath: { eq: "temp-project.jpg" }) {
+    projectThreeImgMain: file(relativePath: { eq: "knowted-main.png" }) {
       ...fluidImage
     }
-    projectThreeImgDetail: file(relativePath: { eq: "temp-project.jpg" }) {
+    projectThreeImgDetailOne: file(
+      relativePath: { eq: "knowted-detail1.png" }
+    ) {
+      ...fluidImage
+    }
+    projectThreeImgDetailTwo: file(
+      relativePath: { eq: "knowted-detail2.png" }
+    ) {
       ...fluidImage
     }
     pastOne: file(relativePath: { eq: "temp-past.jpg" }) {

@@ -6,6 +6,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,7 +23,7 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#000',
         display: 'minimal-ui',
-        icon: 'src/images/smile.png', // This path is relative to the root of the site.
+        icon: 'src/images/smile.svg', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
