@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const App = styled.div`
   max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
 
   span,
@@ -9,6 +10,11 @@ export const App = styled.div`
     font-family: effra, sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #000;
   }
 
   .tag {
@@ -57,10 +63,29 @@ export const App = styled.div`
     .gatsby-image-wrapper {
       max-width: 1040px;
       margin: 0 auto;
+      margin-bottom: 20px;
     }
 
     .project-info {
-      margin-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 120px;
+      font-size: 1.15em;
+      font-weight: 400;
+      line-height: 1.35em;
+      max-width: 1040px;
+
+      p {
+        margin: 5px 0 25px 0;
+      }
+
+      h3,
+      a {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: effra, sans-serif;
+        font-size: 0.85em;
+        margin: 0;
+      }
     }
   }
 `

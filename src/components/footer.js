@@ -1,7 +1,9 @@
 import React from 'react'
 
+import { FooterContainer } from '../styles/footer.style'
+
 const Footer = () => (
-  <footer className="footer">
+  <FooterContainer>
     <ul>
       <li>
         <a href="mailto:hello@clkent.com" alt="email hello@clkent.com">
@@ -18,13 +20,13 @@ const Footer = () => (
           linkedin
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="" alt="resume link">
           resume
         </a>
-      </li>
+      </li> */}
     </ul>
-  </footer>
+  </FooterContainer>
 )
 
 export default Footer
