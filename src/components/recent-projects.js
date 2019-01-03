@@ -39,6 +39,8 @@ const RecentProjects = props => (
           >
             VISIT SITE
           </a>
+          &bull;
+          <a href="https://github.com/clkent/dreams-client"> GITHUB REPO</a>
         </div>
       </div>
     </div>
@@ -75,6 +77,11 @@ const RecentProjects = props => (
             <strong>pw:</strong> janelearnsmusic
           </p>
           <a href="https://learn-noteful.herokuapp.com/">VISIT SITE</a>
+          &bull;
+          <a href="https://github.com/thinkful-ei24/Noteful-Client">
+            {' '}
+            GITHUB REPO
+          </a>
         </div>
       </div>
     </div>
@@ -112,6 +119,8 @@ const RecentProjects = props => (
           </a>
           &bull;
           <a href="https://knowted.netlify.com/"> VISIT SITE</a>
+          &bull;
+          <a href="https://github.com/clkent/knowted"> GITHUB REPO</a>
         </div>
       </div>
     </div>
