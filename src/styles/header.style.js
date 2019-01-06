@@ -44,4 +44,24 @@ export const HeaderContainer = styled.header`
       color: #000;
     }
   }
+
+  ul {
+    list-style: none;
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    width: 240px;
+
+    li {
+      padding: 0 10px 0 0;
+
+      a {
+        text-transform: uppercase;
+        font-family: effra, sans-serif;
+        font-weight: 400;
+        font-size: 0.75em;
+        color: #000;
+      }
+    }
+  }
 `

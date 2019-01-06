@@ -2,8 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 const PastLife = props => (
-  <div>
-    <span className="tag">Past Life</span>
+  <>
+    <span className="tag past-life">Past Life</span>
 
     {/* past life 1 */}
     <div className="past-life">
@@ -105,7 +105,7 @@ const PastLife = props => (
         </li>
       </ul>
     </div>
-  </div>
+  </>
 )
 
 export default PastLife

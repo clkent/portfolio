@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const App = styled.div`
-  max-width: 1200px;
+  max-width: 1080px;
   padding: 0 20px;
   margin: 0 auto;
 
@@ -61,7 +61,7 @@ export const App = styled.div`
     }
 
     .gatsby-image-wrapper {
-      max-width: 1040px;
+      max-width: 1080px;
       margin: 0 auto;
       margin-bottom: 20px;
     }
@@ -72,7 +72,7 @@ export const App = styled.div`
       font-size: 1.15em;
       font-weight: 400;
       line-height: 1.35em;
-      max-width: 1040px;
+      max-width: 1080px;
 
       p {
         margin: 5px 0 25px 0;
@@ -85,6 +85,16 @@ export const App = styled.div`
         font-family: effra, sans-serif;
         font-size: 0.85em;
         margin: 0;
+      }
+
+      @media (min-width: 925px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .project-copy {
+          max-width: 620px;
+          margin-left: 30px;
+        }
       }
     }
   }

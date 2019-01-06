@@ -2,8 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 const RecentProjects = props => (
-  <div>
-    <span className="tag">recent projects</span>
+  <>
+    <span className="tag recent-projects">recent projects</span>
 
     {/* project 1 */}
     <div className="recent-project">
@@ -15,10 +15,15 @@ const RecentProjects = props => (
       </div>
       <a href="https://dream-recall.herokuapp.com/" alt="Dream Recall app link">
         <Img fluid={props.projectOneImgMain.childImageSharp.fluid} />
-        <Img fluid={props.projectOneImgDetail.childImageSharp.fluid} />
       </a>
       <div className="project-info">
-        <div>
+        <a
+          href="https://dream-recall.herokuapp.com/"
+          alt="Dream Recall app link"
+        >
+          <Img fluid={props.projectOneImgDetail.childImageSharp.fluid} />
+        </a>
+        <div className="project-copy">
           <p>
             On your own custom Dream Desktop you'll find the tools you need to
             record, revisit, and understand your dreams. Writing down your
@@ -58,10 +63,15 @@ const RecentProjects = props => (
         alt="noteful app link"
       >
         <Img fluid={props.projectTwoImgMain.childImageSharp.fluid} />
-        <Img fluid={props.projectTwoImgDetail.childImageSharp.fluid} />
       </a>
       <div className="project-info">
-        <div>
+        <a
+          href="https://learn-noteful.herokuapp.com/dashboard"
+          alt="noteful app link"
+        >
+          <Img fluid={props.projectTwoImgDetail.childImageSharp.fluid} />
+        </a>
+        <div className="project-copy">
           <p>
             Noteful will present you with a single note to learn at a time.
             We'll keep track of how many you get right and wrong and show you
@@ -99,10 +109,12 @@ const RecentProjects = props => (
       <a href="https://knowted.netlify.com/" alt="knowted app link">
         <Img fluid={props.projectThreeImgMain.childImageSharp.fluid} />
         <Img fluid={props.projectThreeImgDetailOne.childImageSharp.fluid} />
-        <Img fluid={props.projectThreeImgDetailTwo.childImageSharp.fluid} />
       </a>
       <div className="project-info">
-        <div>
+        <a href="https://knowted.netlify.com/" alt="knowted app link">
+          <Img fluid={props.projectThreeImgDetailTwo.childImageSharp.fluid} />
+        </a>
+        <div className="project-copy">
           <p>
             Learning from online resources can sometimes feel chaotic. There are
             so many sites and video tutorials to keep track of and often no real
@@ -124,7 +136,7 @@ const RecentProjects = props => (
         </div>
       </div>
     </div>
-  </div>
+  </>
 )
 
 export default RecentProjects
