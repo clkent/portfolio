@@ -10,7 +10,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div>
+        <>
           <RecentProjects
             projectOneImgMain={this.props.data.projectOneImgMain}
             projectOneImgDetail={this.props.data.projectOneImgDetail}
@@ -20,14 +20,14 @@ class IndexPage extends React.Component {
             projectThreeImgDetailOne={this.props.data.projectThreeImgDetailOne}
             projectThreeImgDetailTwo={this.props.data.projectThreeImgDetailTwo}
           />
-          {/* //TODO: Add in past work section */}
-          {/* <PastLife
+
+          <PastLife
             pastOne={this.props.data.pastOne}
             pastTwo={this.props.data.pastTwo}
             pastThree={this.props.data.pastThree}
             pastFour={this.props.data.pastFour}
-          /> */}
-        </div>
+          />
+        </>
         <Footer />
       </Layout>
     )
@@ -83,16 +83,16 @@ export const pageQuery = graphql`
     ) {
       ...fluidImage
     }
-    pastOne: file(relativePath: { eq: "temp-past.jpg" }) {
+    pastOne: file(relativePath: { eq: "scratch.png" }) {
       ...smFluidImage
     }
-    pastTwo: file(relativePath: { eq: "temp-past.jpg" }) {
+    pastTwo: file(relativePath: { eq: "votum.png" }) {
       ...smFluidImage
     }
-    pastThree: file(relativePath: { eq: "temp-past.jpg" }) {
+    pastThree: file(relativePath: { eq: "launchpad.png" }) {
       ...smFluidImage
     }
-    pastFour: file(relativePath: { eq: "temp-past.jpg" }) {
+    pastFour: file(relativePath: { eq: "convoz.png" }) {
       ...smFluidImage
     }
   }
