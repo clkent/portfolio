@@ -18,12 +18,18 @@ export const App = styled.div`
   }
 
   .tag {
-    background-color: #ffcd00;
     padding: 5px;
     text-transform: uppercase;
     font-size: 0.75em;
     color: #fff;
     letter-spacing: 1px;
+  }
+
+  .tag.recent-projects {
+    background-color: #ffcd00;
+  }
+  .tag.past-life {
+    background-color: #94ce6b;
   }
 
   .recent-project {
@@ -94,6 +100,45 @@ export const App = styled.div`
         .project-copy {
           max-width: 620px;
           margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .past-life-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+
+    @media (min-width: 925px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div {
+      font-family: effra, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      h3,
+      p,
+      ul {
+        padding-left: 5px;
+        padding-right: 20px;
+      }
+
+      ul {
+        list-style: none;
+        font-weight: 500;
+        font-size: 0.75em;
+
+        li {
+          padding-top: 5px;
         }
       }
     }
