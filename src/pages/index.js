@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import RecentProjects from '../components/recent-projects'
 import PastLife from '../components/past-life'
+import About from '../components/about'
 import Footer from '../components/footer'
 
 class IndexPage extends React.Component {
@@ -27,6 +28,8 @@ class IndexPage extends React.Component {
             pastThree={this.props.data.pastThree}
             pastFour={this.props.data.pastFour}
           />
+
+          <About aboutImg={this.props.data.aboutImg} />
         </>
         <Footer />
       </Layout>
@@ -93,6 +96,9 @@ export const pageQuery = graphql`
       ...smFluidImage
     }
     pastFour: file(relativePath: { eq: "convoz.png" }) {
+      ...smFluidImage
+    }
+    aboutImg: file(relativePath: { eq: "chelsea.jpg" }) {
       ...smFluidImage
     }
   }

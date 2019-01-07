@@ -17,6 +17,14 @@ export const App = styled.div`
     color: #000;
   }
 
+  h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: effra, sans-serif;
+    font-size: 1em;
+    margin: 0;
+  }
+
   .tag {
     padding: 5px;
     text-transform: uppercase;
@@ -30,6 +38,9 @@ export const App = styled.div`
   }
   .tag.past-life {
     background-color: #94ce6b;
+  }
+  .tag.about {
+    background-color: #00d0cd;
   }
 
   .recent-project {
@@ -84,7 +95,6 @@ export const App = styled.div`
         margin: 5px 0 25px 0;
       }
 
-      h3,
       a {
         text-transform: uppercase;
         font-weight: 500;
@@ -108,7 +118,7 @@ export const App = styled.div`
   .past-life-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 30px 0;
+    margin: 30px 0 120px 0;
 
     @media (min-width: 925px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -119,10 +129,8 @@ export const App = styled.div`
       font-weight: 400;
       font-style: normal;
 
-      h3 {
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 1px;
+      .gatsby-image-wrapper {
+        border: 1px solid #f1f1f1;
       }
 
       h3,
@@ -139,6 +147,23 @@ export const App = styled.div`
 
         li {
           padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  .about-container {
+    .about-content {
+      margin: 20px 0;
+      display: grid;
+      @media (min-width: 925px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-info {
+        margin: 30px 0;
+        @media (min-width: 925px) {
+          margin: 0 30px;
         }
       }
     }

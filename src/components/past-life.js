@@ -11,8 +11,8 @@ const PastLife = props => (
         <h3>Scratch</h3>
         <p>
           Founder of bootstrapped e-commerce subscription nail wrap company that
-          collaborated with artists/creators monthly to release a DIY monthly
-          mani box/kit.
+          collaborated with artists/social media influencers monthly to release
+          a DIY monthly mani box &amp; kit.
         </p>
         <p>Built initial site w/ HTML, CSS, Ruby On Rails, Stripe</p>
         <p>
@@ -74,7 +74,7 @@ const PastLife = props => (
           accelerator, as an Entrepreneur In Residence. While there I joined
           several early stage startups and helped them launch their MVPs
           stepping in whatever role was needed to get us there. (UI/UX, Product,
-          FrontEnd dev)
+          Front-end dev)
         </p>
         <ul>
           <li>
@@ -90,7 +90,7 @@ const PastLife = props => (
         <Img fluid={props.pastFour.childImageSharp.fluid} />
         <h3>Convoz</h3>
         <p>
-          Joined as an early hire focused on Product and UI/UX designer. Helped
+          Joined as an early hire focused on Product and UI/UX design. Helped
           translate founders vision into launched MVP app.
         </p>
         <ul>
