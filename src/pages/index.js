@@ -99,7 +99,7 @@ export const pageQuery = graphql`
       ...smFluidImage
     }
     aboutImg: file(relativePath: { eq: "chelsea.jpg" }) {
-      ...smFluidImage
+      ...fluidImage
     }
   }
 `
