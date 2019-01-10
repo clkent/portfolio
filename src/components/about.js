@@ -42,7 +42,7 @@ const About = props => (
         <p>
           I also dedicate a lot of heart to writing and playing music. I
           currently play the guitar, uke, and enjoy singing. I'm also in the
-          early and exciting stages of picking up the bass gutiar.
+          early and exciting stages of picking up the bass guitar.
         </p>
       </div>
     </div>
